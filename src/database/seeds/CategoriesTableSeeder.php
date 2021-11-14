@@ -11,9 +11,6 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-<<<<<<< HEAD
-        //
-=======
         $categories = [];
 
 
@@ -25,6 +22,6 @@ class CategoriesTableSeeder extends Seeder
             ];
         }
         DB::table('categories')->insert($categories);
->>>>>>> b8556094e9b4e2ca04fa35d9c8e2e8ad9fa1640d
+
     }
 }

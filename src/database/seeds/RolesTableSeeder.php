@@ -11,9 +11,7 @@ class RolesTableSeeder extends Seeder
      */
     public function run()
     {
-<<<<<<< HEAD
-        //
-=======
+
         $roles = [];
 
         $roles = [
@@ -21,6 +19,5 @@ class RolesTableSeeder extends Seeder
         ];
 
         DB::table('roles')->insert($roles);
->>>>>>> b8556094e9b4e2ca04fa35d9c8e2e8ad9fa1640d
     }
 }
