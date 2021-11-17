@@ -16,17 +16,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-//Route::group(['namespace' > 'blog', 'prefix' > 'blog'], function (){
-//    Route::resource('posts', 'PostController') ->names('blog.posts');
-//});
-Route::namespace('Blog')->prefix('blog')->group(function (){
-    Route::resource('posts', 'PostController')->names('blog.posts');
-});
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-
-Route::resource('categories', 'CategoryController')->names('categories');
