@@ -1,23 +1,19 @@
-<html>
-<head>
-    <title>
-        Create new Post
-    </title>
+@extends('layouts.app')
 
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+@section('scripts')
+    <script src="https://cdn.tiny.cloud/1/5qwhsor2o1okcrt284b7685hkef732ahi0ryph4hq0gfmtpp/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+@endsection
 
-    <script>
-        tinymce.init({
-            selector: '#mytextarea'
-        });
-    </script>
-
-
-</head>
-<body>
+@section('content')
     <h1>TinyMCE Quick Start Guide</h1>
     <form method="post">
-    <textarea id="mytextarea">Hello, World!</textarea>
+        <textarea id="mytextarea">Hello, World!</textarea>
     </form>
-</body>
-</html>
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+            toolbar_mode: 'floating',
+        });
+    </script>
+@endsection
