@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +14,11 @@
     rel="stylesheet">
   <link rel="stylesheet" href="{{ asset('css/swiper-bundle.min.css') }}">
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+  
   <script src="https://kit.fontawesome.com/0639a1d61b.js" crossorigin="anonymous"></script>
       <!-- Scripts -->
-      <script src="{{ asset('js/app.js') }}" defer></script>
+  <script src="{{ asset('js/app.js') }}" defer></script>
+
 </head>
 <body>
   <header class="header">
@@ -46,7 +49,7 @@
             @endif
          @else
          <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-            <img src="https://vorushilo.ru/sport/img/news/test.jpg" width="10px" height="20px">
+            <img src="https://vorushilo.ru/sport/img/news/test.jpg" width="30px" height="30px">
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="{{ route('logout') }}"
