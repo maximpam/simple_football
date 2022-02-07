@@ -57,7 +57,8 @@ public function getPostsForMainPage(){
     $result  =  $this
     ->startConditions()
     ->select($fields)
-    ->take(10)
+    ->latest()
+    ->take(4)
     ->get();
 
     return $result;

@@ -29,8 +29,6 @@ class NewsPostController extends BaseController
     public function index()
     {
         $paginator = $this->newsPostsRepository->getAllwithPaginate(5);
-
-
         return view('admin.news.index', compact('paginator'));
 
     }

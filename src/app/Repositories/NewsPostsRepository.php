@@ -51,6 +51,8 @@ public function getAllwithPaginate($perPage = null){
     return $result;
 }
 
+
+
 public function getPostsForMainPage(){
     $fields = ['title', 'description', 'cover_url', 'id'];
 
@@ -58,11 +60,25 @@ public function getPostsForMainPage(){
     ->startConditions()
     ->select($fields)
     ->latest()
-    ->take(10)
+    ->take(6)
     ->get();
 
     return $result;
 }
+
+public function getAllwithPaginateforPublic($perPage = null){
+    $fields = ['id', 'slug', 'title', 'description', 'cover_url', 'id'];
+
+    $result  =  $this
+    ->startConditions()
+    ->select($fields)
+    ->paginate($perPage);
+
+
+    return $result;
+}
+
+
 
 
 }

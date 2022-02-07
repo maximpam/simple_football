@@ -25,7 +25,7 @@ class PublicController extends Controller
 
         $newsPosts = $this->newsPostRepository->getPostsForMainPage();
         $blogPosts = $this->blogPostsRepository->getPostsForMainPage();
-        return view('public.main.main_page', compact('newsPosts'));
+        return view('public.main.main_page', compact('newsPosts', 'blogPosts'));
 
         //return view('public.main_page', compact('newsPosts'));
 

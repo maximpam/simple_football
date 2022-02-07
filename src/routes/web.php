@@ -24,7 +24,10 @@ Route::get('/test', function () {
     return view('test');
 });
 
-
+Route::namespace('Common')->prefix('news')->group(function(){
+    Route::get('/', 'NewsController@index');
+    Route::get('/{id}', 'NewsController@show');
+});
 
 
 //Route::group(['namespace' > 'blog', 'prefix' > 'blog'], function (){
