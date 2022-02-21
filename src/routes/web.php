@@ -29,9 +29,15 @@ Route::namespace('Common')->prefix('news')->group(function(){
     Route::get('/{id}', 'NewsController@show');
 });
 
+    Route::get('/posts', [App\Http\Controllers\Livewire\PostListing::class, 'index'])
+        ->name('posts.listing');
+
+        // Route::namespace('Livewire')->prefix('posts')->group(function(){
+        //     Route::get('/', 'PostListing@render');
+        // });
 
 //Route::group(['namespace' > 'blog', 'prefix' > 'blog'], function (){
-//    Route::resource('posts', 'PostController') ->names('blog.posts');W
+//    Route::resource('posts', 'PostController') ->names('blog.posts');
 //});
 
 

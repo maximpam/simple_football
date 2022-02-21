@@ -74,6 +74,7 @@
 
   </div>
   <!-- /.news -->
-
+  <main class="mt-12 min-h-full">
+</main>
 
 @endsection

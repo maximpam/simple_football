@@ -13,6 +13,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="{{ asset('css/swiper-bundle.min.css') }}">
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+  @livewireStyles
 
   <script src="https://kit.fontawesome.com/0639a1d61b.js" crossorigin="anonymous"></script>
       <!-- Scripts -->
@@ -389,5 +390,7 @@
 
   <script src="{{ asset('js/plugins/swiper-bundle.min.js') }}"></script>
   <script src="{{ asset('js/script.js') }}"></script>
+  @livewireScripts
+
 </body>
 </html>
