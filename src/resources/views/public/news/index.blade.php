@@ -74,7 +74,10 @@
 
   </div>
   <!-- /.news -->
+<<<<<<< HEAD
   <main class="mt-12 min-h-full">
 </main>
+=======
+>>>>>>> 09c3754db7a0e29d9016db17a1f00babf1a66a35
 
 @endsection
