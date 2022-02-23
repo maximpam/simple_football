@@ -5,6 +5,7 @@
 @extends('public.main.app')
 
 @section('content')
+<section class="home">
 <div class="home-wrapper">
 <div class="news">
     <div class="news-head">
@@ -127,6 +128,7 @@
 
   </div>
   <!-- /.news -->
+
 
 
   <div class="blog">

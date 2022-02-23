@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -292,7 +292,7 @@
     </section>
     <!-- /.top-slider -->
 
-    <section class="home">
+
       <div class="container">
 
             <!-- Start CONTENT -->
@@ -301,7 +301,6 @@
 
 
       </div>
-    </section>
     <!-- /.home -->
   </main>
   <!-- /.main -->
@@ -378,6 +377,7 @@
         <!-- /.footer-main__wrapper -->
       </div>
       <!-- /.container -->
+    </section>
     </div>
     <!-- /.footer-main -->
     <div class="footer-bottom">

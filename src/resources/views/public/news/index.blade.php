@@ -5,7 +5,8 @@
 @extends('public.main.app')
 
 @section('content')
-
+<section id="all" class="all-news">
+<div class="container">
 <div class="news">
     <div class="news-head">
       <div class="line-shape"></div>
@@ -56,28 +57,13 @@
                 </div>
                 <!-- /.news-card -->
             @endforeach
-            @if($paginator->total() > $paginator->count())
-            <br>
-        <div class="row justify-content-center">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-body">
-                        {{$paginator->links()}}
-                    </div>
-                </div>
-            </div>
-        </div>
-        @endif
+
     <button class="button news__button">
       <span>Ещё новости</span>
     </button>
 
   </div>
   <!-- /.news -->
-<<<<<<< HEAD
-  <main class="mt-12 min-h-full">
-</main>
-=======
->>>>>>> 09c3754db7a0e29d9016db17a1f00babf1a66a35
+</div>
 
 @endsection

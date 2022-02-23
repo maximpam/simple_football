@@ -29,7 +29,7 @@ Route::namespace('Common')->prefix('news')->group(function(){
     Route::get('/{id}', 'NewsController@show');
 });
 
-    Route::get('/posts', [App\Http\Controllers\Livewire\PostListing::class, 'index'])
+Route::get('/posts', [App\Http\Controllers\Livewire\PostListing::class])
         ->name('posts.listing');
 
         // Route::namespace('Livewire')->prefix('posts')->group(function(){
